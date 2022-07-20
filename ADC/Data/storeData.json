@@ -1,0 +1,30 @@
+[{
+    "name": "Tissus des Usules",
+    "city": "Grasse",
+    "type": "physical",
+    "latitude": 43.643349,
+    "longitude": 6.947322
+},
+    
+{
+    "name": "Tissus des Usules",
+    "city": "Cannes",
+    "type": "physical",
+    "latitude": 43.552967,
+    "longitude": 6.956077
+},
+
+{
+    "name": "Mondial Tissus",
+    "city": "Cannes",
+    "type": "physical",
+    "latitude": 43.551274,
+    "longitude": 6.945984
+},
+
+{
+    "name": "Tissu online",
+    "type": "online",
+    "website": "www.test.com"
+}]
+

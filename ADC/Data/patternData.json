@@ -1,0 +1,78 @@
+[
+{
+    "name": "Pochette à savon",
+    "source": "Couture Zéro Déchet (dans ma salle de bain), Anais Malfilatre",
+    "image": "pochette savon",
+    "time": 45,
+    "fabricsNeeded" : [
+        {"type": "Cotton enduit", "length": 30,"width": 14},
+        {"type": "Cotton imprimé", "length": 30,"width": 14}
+    ],
+    "claspsNeeded" : [
+        {"type": "Bouton pression", "quantity": 2}
+    ],
+    "steps" : [
+        "Tracez un rectangle de 28 cm x 8 cm sur un papier un peu épais. Il s'agit d'un demi-patron qu'il faudra placer au pli du tissu, fourni marges incluses (1 cm).",
+        "Tracez le gabarit une fois au pli sur le coton imprimé et une fois au pli sur le coton enduit ou la gabardine imperméable. Vous obtiendrez donc deux rectangles de 8 cm x 56 cm. Découpez-les et arrondissez deux de leurs angles symétriquement.",
+        "Si vous souhaitez fermer votre pochette avec un élastique, tracez un repère à 2.5 cm de l'extrémité non arrondie de votre pièce en tissu imprimé, et placez-y votre élastique. Fixez les côtés au point droit, bien au bord.",
+        "Épinglez les deux tissus l'un sur l'autre, endroit contre endroit. Piquez à 1 cm du bord en commençant et en terminant au centre d'un grand côté. Laissez une ouverture non cousue d'environ 5 cm pour retourner. Réduisez les marges de couture aux ciseaux à cranter (sauf au niveau de l'ouverture) à 5 mm du bord.",
+        "Retournez la pochette à l'endroit et faites rentrer les marges vers l'intérieur du niveau de l'ouverture. Rabattez le bas de la pochette (partie non arrondie) sur 21 cm vers le haut. Épinglez puis surpiquez tout le tour en partant d'une partie pliée jusqu'à l'autre. Piquez tout près du bord et allongez votre point droit! Repassez température modérée: attention au tissu imperméable.",
+        "Si vous préférez mettre une pression résine à la place de l'élastique, posez un embout mâle sur le rabat arrondi et l'embout femelle en regard sur la pochette (fermez le rabat pour estimer son emplacement) en glissant la pointe par l'intérieur de la pochette."
+    ],
+    "photos" : [
+        "Pochette à savon 1",
+        "Pochette à savon 2",
+        "Pochette à savon 3",
+        "Pochette à savon 4",
+        "Pochette à savon 5",
+        "Pochette à savon 6"
+    ]
+},
+{
+    "name": "Etui à brosse à dents",
+    "source": "Livre",
+    "image": "etui brosse dents",
+    "time": 60,
+    "fabricsNeeded" : [
+        {"type": "Cotton ciré", "length": 60,"width": 40},
+        {"type": "Cotton", "length": 60,"width": 40}
+    ],
+    "claspsNeeded" : [
+        {"type": "Bouton pression", "quantity": 1}
+    ],
+    "steps" : [
+        "Tracez un rectangle de 28 cm x 8 cm sur un papier un peu épais. Il s'agit d'un demi-patron qu'il faudra placer au pli du tissu, fourni marges incluses (1 cm).",
+        "Tracez le gabarit une fois au pli sur le coton imprimé et une fois au pli sur le coton enduit ou la gabardine imperméable. Vous obtiendrez donc deux rectangles de 8 cm x 56 cm. Découpez-les et arrondissez deux de leurs angles symétriquement.",
+        "Si vous souhaitez fermer votre pochette avec un élastique, tracez un repère à 2.5 cm de l'extrémité non arrondie de votre pièce en tissu imprimé, et placez-y votre élastique. Fixez les côtés au point droit, bien au bord.",
+        "Épinglez les deux tissus l'un sur l'autre, endroit contre endroit. Piquez à 1 cm du bord en commençant et en terminant au centre d'un grand côté. Laissez une ouverture non cousue d'environ 5 cm pour retourner. Réduisez les marges de couture aux ciseaux à cranter (sauf au niveau de l'ouverture) à 5 mm du bord.",
+        "Retournez la pochette à l'endroit et faites rentrer les marges vers l'intérieur du niveau de l'ouverture. Rabattez le bas de la pochette (partie non arrondie) sur 21 cm vers le haut. Épinglez puis surpiquez tout le tour en partant d'une partie pliée jusqu'à l'autre. Piquez tout près du bord et allongez votre point droit! Repassez température modérée: attention au tissu imperméable.",
+        "Si vous préférez mettre une pression résine à la place de l'élastique, posez un embout mâle sur le rabat arrondi et l'embout femelle en regard sur la pochette (fermez le rabat pour estimer son emplacement) en glissant la pointe par l'intérieur de la pochette."
+    ],
+    "photos" : [
+        "Etui à brosse à dents 1",
+        "Etui à brosse à dents 2",
+        "Etui à brosse à dents 3",
+        "Etui à brosse à dents 4",
+        "Etui à brosse à dents 5",
+        "Etui à brosse à dents 6"
+    ]
+},
+
+{
+    "name": "Tote bag réversible",
+    "source": "YT",
+    "image": "etui brosse dents",
+    "time": 60,
+    "fabricsNeeded" : [
+        {"type": "Cotton ciré", "length": 60,"width": 40},
+        {"type": "Cotton", "length": 60,"width": 40}
+    ],
+    "claspsNeeded" : [
+        {"type": "Bouton pression", "quantity": 1}
+    ],
+    "video" : "https://www.youtube.com/watch?v=q3G_xW6qSJU&ab_channel=UneImpressionDeLiberty"
+}
+
+
+]
+

@@ -1,0 +1,64 @@
+[{
+    "name": "Pois bleu",
+    "source": {
+        "name": "Tissus des Ursules",
+        "city": "Grasse",
+        "type": "physical",
+        "latitude": 43.643349,
+        "longitude": 6.947322
+    },
+    "image": "pois ciré",
+    "type": "Ciré",
+    "sizes" : [
+        {"quantity": 1,"length": 0.6,"width": 1.45, "price": 5.66}
+    ]
+},
+    
+{
+    "name": "Coupons bleus",
+    "source": {
+        "name": "Tissus des Ursules",
+        "city": "Grasse",
+        "type": "physical",
+        "latitude": 43.643349,
+        "longitude": 6.947322
+    },
+    "image": "coupons bleu",
+    "type": "Cotton",
+    "sizes" : [
+        {"quantity": 1,"length": 0.6,"width": 1.45, "price": 12.79}
+    ]
+},
+
+{
+    "name": "Coupons gris",
+    "source": {
+        "name": "Tissus des Ursules",
+        "city": "Grasse",
+        "type": "physical",
+        "latitude": 43.643349,
+        "longitude": 6.947322
+    },
+    "image": "coupons gris",
+    "type": "Cotton",
+    "sizes" : [
+        {"quantity": 1,"length": 0.6,"width": 1.45, "price": 12.79}
+    ]
+},
+
+{
+    "name": "Fleurs bleues et oranges",
+    "source": {
+        "name": "Tissus des Ursules",
+        "city": "Grasse",
+        "type": "physical",
+        "latitude": 43.643349,
+        "longitude": 6.947322
+    },
+    "image": "fleurs cirés",
+    "type": "Ciré",
+    "sizes" : [
+        {"quantity": 1,"length": 0.6,"width": 1.45, "price": 8.99}
+    ]
+
+}]
