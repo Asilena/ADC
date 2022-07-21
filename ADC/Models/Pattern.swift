@@ -9,32 +9,32 @@ import Foundation
 
 class Pattern: Identifiable, Decodable, ObservableObject {
     
-    var id:UUID?
-    var name:String
-    var source:String
-    var image:String
-    var time:Int
-    var fabricsNeeded:[FabricNeeded]
-    var claspsNeeded:[ClaspsNeeded]?
-    var steps:[String]?
-    var photos:[String]?
-    var video:String?
+    var id:String = ""
+    var name:String = ""
+    var source:String = ""
+    var image:String = ""
+    var time:Int = 0
+    var fabricsNeeded:[FabricNeeded] = [FabricNeeded]()
+    var claspsNeeded:[ClaspsNeeded]? = [ClaspsNeeded]()
+    var steps:[String] = [""]
+    var photos:[String] = [""]
+    var video:String = ""
 
 }
 
 class FabricNeeded: Identifiable, Decodable, ObservableObject {
     
-    var id:UUID?
-    var type:String
-    var length:Int
-    var width:Int
+    var id:String = ""
+    var type:String = ""
+    var length:Int = 0
+    var width:Int = 0
     
 }
 
 class ClaspsNeeded: Identifiable, Decodable, ObservableObject {
     
-    var id:UUID?
-    var type:String
-    var quantity:Int
+    var id:String = ""
+    var type:String = ""
+    var quantity:Int = 0
     
 }

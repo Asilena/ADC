@@ -33,7 +33,7 @@ struct PatternStepView: View {
                 TabView {
                     
                     // Loop through each fabric
-                    ForEach (0..<pattern.steps!.count, id: \.self) { index in
+                    ForEach (0..<pattern.steps.count, id: \.self) { index in
                         
                         
                         // Fabric card
@@ -51,14 +51,14 @@ struct PatternStepView: View {
                                     .padding(.all)
 
                                 
-                                Image(pattern.photos![index])
+                                Image(pattern.photos[index])
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .clipped()
                                     .padding(5)
 
                                 
-                                Text(pattern.steps![index])
+                                Text(pattern.steps[index])
                                     .padding(5)
                                 Spacer()
                             }
@@ -79,7 +79,7 @@ struct PatternStepView: View {
             
             else if pattern.video != nil {
                 
-                let youTubePlayer: YouTubePlayer = YouTubePlayer(source: .url(String(pattern.video!)))
+                let youTubePlayer: YouTubePlayer = YouTubePlayer(source: .url(String(pattern.video)))
                 YouTubePlayerView(youTubePlayer) { state in
                             // Overlay ViewBuilder closure to place an overlay View
                             // for the current `YouTubePlayer.State`

@@ -7,7 +7,6 @@ target 'ADC' do
 
   # Pods for ADC
 
-	pod 'FirebaseAuth'
-	pod 'FirebaseFirestore'
+	pod 'Firebase/Firestore'
 
 end

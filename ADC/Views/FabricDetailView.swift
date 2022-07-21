@@ -10,6 +10,7 @@ import MapKit
 
 struct FabricDetailView: View {
     
+    @EnvironmentObject var model:FabricModel
     var fabric:Fabric
     
     var body: some View {
@@ -82,8 +83,12 @@ struct FabricDetailView: View {
             .padding(.horizontal, 10.0)
             
         }
+        .onAppear(perform : {model.getDatabaseSizes(fabric: fabric) { size in
+            fabric.sizes=size
+        }})
+        //.onDisappear(perform: {model.sizeListener?.remove()})
         .navigationBarTitle(fabric.name)
-        
+
         
     }
 }

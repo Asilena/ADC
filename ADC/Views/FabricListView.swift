@@ -53,6 +53,7 @@ struct FabricListView: View {
                                                 .font(.headline)
                                                 .fontWeight(.bold)
                                                 .foregroundColor(.black)
+                                            //Text(String(f.sizes[0].price))
                                             
                                             if f.source.type == "physical" {
                                                 Text(f.source.name + " - " + f.source.city!)
@@ -84,12 +85,17 @@ struct FabricListView: View {
         
             
         }
+        .onAppear(perform : {model.getDatabaseFabrics(completionHandler: { fabrics in
+            model.fabricList = fabrics
+        })})
+        .onDisappear(perform: {model.fabricListener?.remove()})
 
 
         
     }
 
-    
+
+
 }
 
 

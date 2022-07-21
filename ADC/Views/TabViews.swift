@@ -9,11 +9,20 @@ import SwiftUI
 
 struct TabViews: View {
     
+    @EnvironmentObject var model:FabricModel
     
     var body: some View {
         
         TabView{
 
+            HomeView()
+                .tabItem{
+                    VStack {
+                        Image(systemName: "scissors")
+                        Text("Home")
+                    }
+                }
+            
             FabricListView()
                 .tabItem{
                     VStack {
