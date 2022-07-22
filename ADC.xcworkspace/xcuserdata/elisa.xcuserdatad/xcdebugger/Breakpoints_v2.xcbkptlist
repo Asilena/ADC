@@ -14,8 +14,8 @@
             filePath = "ADC/ViewModels/FabricModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "getDatabaseFabrics(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "ADC/ViewModels/FabricModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "getDatabaseFabrics(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "ADC/ViewModels/FabricModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "getDatabaseFabrics(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "ADC/ViewModels/FabricModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "getDatabaseFabrics(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -9,7 +9,8 @@ import SwiftUI
 import MapKit
 
 struct FabricDetailView: View {
-    
+    @State var isAddViewShowing = false
+
     @EnvironmentObject var model:FabricModel
     var fabric:Fabric
     
@@ -78,6 +79,28 @@ struct FabricDetailView: View {
                     }
                 }
                 
+                Button {
+                    model.deleteFabric(fabric: fabric)
+                } label: {
+                    Image(systemName: "minus.circle")
+                }
+                
+                // MARK: Instructions
+                
+                // Instruction card button
+                Button {
+                    // Show step detail sheet
+                    self.isAddViewShowing = true
+                } label: {
+                    Image(systemName: "plus.circle")
+                        .padding()
+                        .frame(height:50)
+                    
+                }
+                .sheet(isPresented: $isAddViewShowing) {
+                    // Show the step details
+                    NewSizeView(fabric: fabric)
+                }
                 
             }
             .padding(.horizontal, 10.0)

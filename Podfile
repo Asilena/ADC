@@ -8,5 +8,5 @@ target 'ADC' do
   # Pods for ADC
 
 	pod 'Firebase/Firestore'
-
+	pod 'FirebaseFirestore'
 end
