@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseCore
+import Firebase
 
 
 @main
@@ -18,7 +19,7 @@ struct ADCApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabViews()
+            LaunchView()
             
         }
     }

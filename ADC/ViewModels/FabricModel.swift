@@ -48,7 +48,7 @@ class FabricModel: ObservableObject {
         
         // Get documents
         self.fabricListener = collection.addSnapshotListener { snapshot, error in
-            print("got to fabric listener")
+
             if error == nil && snapshot != nil {
                 
                 

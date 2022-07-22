@@ -7,10 +7,13 @@
 
 import SwiftUI
 
+
+
 struct TabViews: View {
     
     @EnvironmentObject var model:FabricModel
-    
+    @Binding var loggedIn: Bool
+
     var body: some View {
         
         TabView{
@@ -18,7 +21,7 @@ struct TabViews: View {
             HomeView()
                 .tabItem{
                     VStack {
-                        Image(systemName: "scissors")
+                        Image(systemName: "house.fill")
                         Text("Home")
                     }
                 }
@@ -47,6 +50,14 @@ struct TabViews: View {
                     }
                 }
             
+            ProfileView(loggedIn: $loggedIn)
+                .tabItem{
+                    VStack {
+                        Image(systemName: "person.fill")
+                        Text("Profil")
+                    }
+                }
+            
         }
         .environmentObject(StoreModel())
         .environmentObject(FabricModel())
@@ -57,9 +68,3 @@ struct TabViews: View {
     }
 }
 
-
-struct TabView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabViews()
-    }
-}
