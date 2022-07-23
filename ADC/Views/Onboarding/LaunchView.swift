@@ -21,30 +21,68 @@ struct LaunchView: View {
             
             VStack (spacing:20){
                 
+                Spacer()
+                
+                Text("Bienvenue")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
                 // Sign in view
-                Button {
-                    //Show login form
-                    loginFormShowing = true
-                } label: {
-                    Text("sign in")
-                }
-                .sheet(isPresented: $loginFormShowing, onDismiss: checkLogin) {
-                    LoginForm(formShowing: $loginFormShowing)
+                ZStack {
+                    
+                    Rectangle()
+                        .cornerRadius(30)
+                        .padding(.horizontal)
+                        .foregroundColor(Color(red: 72/255, green: 72/255, blue: 74/255))
+                        .frame(height:50)
+                    
+                    Button {
+                        //Show login form
+                        loginFormShowing = true
+                    } label: {
+                        Text("Se Connecter")
+                            .foregroundColor(.white)
+                    }
+                    .sheet(isPresented: $loginFormShowing, onDismiss: checkLogin) {
+                        LoginForm(formShowing: $loginFormShowing)
+                            .onAppear(perform: {UITableView.appearance().backgroundColor = .clear})
+                            .onDisappear {UITableView.appearance().backgroundColor = .systemGroupedBackground}
+                    }
                 }
                 
                 // Create account
-                Button {
-                    createFormShowing = true
-                } label: {
-                    Text("Create account")
+                
+                ZStack {
+                    
+                    Rectangle()
+                        .cornerRadius(30)
+                        .padding(.horizontal)
+                        .foregroundColor(.white)
+                        .frame(height:50)
+                    
+                    Button {
+                        createFormShowing = true
+                    } label: {
+                        Text("Créer un Compte")
+                            .foregroundColor(Color(red: 72/255, green: 72/255, blue: 74/255))
+                    }
+                    .sheet(isPresented: $createFormShowing, onDismiss: checkLogin) {
+                        CreateAccountForm(formShowing: $createFormShowing)
+                            .onAppear(perform: {UITableView.appearance().backgroundColor = .clear})
+                            .onDisappear {UITableView.appearance().backgroundColor = .systemGroupedBackground}
+                    }
+                    
                 }
-                .sheet(isPresented: $createFormShowing, onDismiss: checkLogin) {
-                    CreateAccountForm(formShowing: $createFormShowing)
-                }
-
+                Spacer()
+                
+                
                 
                 
             }
+            .background(Color.mint)
+            .ignoresSafeArea()
             .onAppear {
                 checkLogin()
             }

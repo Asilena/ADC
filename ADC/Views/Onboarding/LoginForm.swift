@@ -16,31 +16,60 @@ struct LoginForm: View {
     @State private var password = ""
     @State private var errorMessage: String?
     
+    
+    
     var body: some View {
         
         NavigationView {
             
-            Form {
-                Section{
-                    TextField("Email", text: $email)
-                    SecureField("Password", text: $password)
-                }
-                if errorMessage != nil {
-                    Section {
-                        Text(errorMessage!)
+            VStack {
+                
+                Text("Se Connecter")
+                    .foregroundColor(.white)
+                    .padding()
+                    .font(.largeTitle)
+
+                
+                Form {
+                    Section(header: Text("EMAIL")
+                        .foregroundColor(.white)
+                        .font(.headline)){
+                        TextField("Email", text: $email)
+                    }
+                    Section(header: Text("MOT DE PASSE")
+                        .foregroundColor(.white)
+                        .font(.headline)){
+                            SecureField("Mot de passe", text: $password)
+                    }
+                    if errorMessage != nil {
+                        Section {
+                            Text(errorMessage!)
+                        }
                     }
                 }
                 
-                Button {
-                    //Login
-                    signIn()
-                } label: {
-                    Text("Sign in")
+                ZStack {
+                    
+                    Rectangle()
+                        .cornerRadius(30)
+                        .padding(.horizontal)
+                        .foregroundColor(Color.mint)
+                        .frame(height:50)
+                    
+                    Button {
+                        //Login
+                        signIn()
+                    } label: {
+                        Text("Se Connecter")
+                            .foregroundColor(.white)
+                    }
                 }
                 
+               
             }
-            .navigationBarTitle("Sign In")
+            .background(Color(red: 72/255, green: 72/255, blue: 74/255))
         }
+        
         
     }
     

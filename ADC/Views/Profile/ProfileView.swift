@@ -15,7 +15,8 @@ struct ProfileView: View {
     var body: some View {
 
         VStack{
-            Text("Welcome")
+            Text("Profile")
+                .font(.largeTitle)
             Button {
                 try! Auth.auth().signOut()
                 loggedIn = false

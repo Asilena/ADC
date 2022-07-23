@@ -17,40 +17,68 @@ struct CreateAccountForm: View {
     @State private var password:String = ""
     
     @State private var errorMessage:String?
-
+    
     var body: some View {
-
+        
         NavigationView {
-            
-            Form{
+            VStack {
                 
-                Section {
-                TextField("Email", text: $email)
-                TextField("Name", text: $name)
-                SecureField("Password", text: $password)
-                }
+                Text("Créer un Compte")
+                    .foregroundColor(.white)
+                    .padding()
+                    .font(.largeTitle)
                 
-                if errorMessage != nil {
-                    Section {
-                        Text(errorMessage!)
+                Form{
+                    
+                    Section(header: Text("EMAIL")
+                        .foregroundColor(.white)
+                        .font(.headline)){
+                            TextField("Email", text: $email)
+                        }
+                    Section(header: Text("NOM")
+                        .foregroundColor(.white)
+                        .font(.headline)){
+                            TextField("Nom complet", text: $name)
+                        }
+                    Section(header: Text("MOT DE PASSE")
+                        .foregroundColor(.white)
+                        .font(.headline)){
+                            SecureField("Mot de passe", text: $password)
+                        }
+                    
+                    if errorMessage != nil {
+                        Section {
+                            Text(errorMessage!)
+                        }
                     }
+                    
                 }
+            
+            .background(Color(red: 72/255, green: 72/255, blue: 74/255))
+            
+            ZStack {
                 
+                Rectangle()
+                    .cornerRadius(30)
+                    .padding(.horizontal)
+                    .foregroundColor(Color.mint)
+                    .frame(height:50)
                 
                 Button {
-                    // Create account
+                    //Create account
                     createAccount()
                 } label: {
-                    Text("Create account")
+                    Text("Créer un compte")
+                        .foregroundColor(.white)
                 }
-
-                
             }
-            
-        }
-        .navigationBarTitle("Create an Account")
+            }
+            .background(Color(red: 72/255, green: 72/255, blue: 74/255))
 
+        }
+        
     }
+    
     
     func createAccount() {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
@@ -65,7 +93,7 @@ struct CreateAccountForm: View {
                 }
             }
             
-           
+            
         }
     }
 }

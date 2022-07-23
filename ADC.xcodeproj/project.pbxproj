@@ -116,13 +116,13 @@
 		4C05C996287DAA3D00F82A23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4CB68AFB288B16C100F9C313 /* Onboarding */,
 				4C64BD1A28803F8C008A375F /* TabViews.swift */,
 				4CE200CD28807F6F004236AB /* HomeView.swift */,
-				4CB68AFB288B16C100F9C313 /* Onboarding */,
+				4CB68AFC288B16D100F9C313 /* Fabric tab */,
+				4CB68AFD288B16D700F9C313 /* Pattern tab */,
 				4CB68B01288B1B3200F9C313 /* Profile */,
 				4CB68AFE288B16E000F9C313 /* New product */,
-				4CB68AFD288B16D700F9C313 /* Pattern tab */,
-				4CB68AFC288B16D100F9C313 /* Fabric tab */,
 				4CB68AF4288AFFD500F9C313 /* Utilities */,
 			);
 			path = Views;
