@@ -10,6 +10,9 @@ import FirebaseAuth
 
 struct LaunchView: View {
     
+    @StateObject var model = UserModel()
+
+
     @State var loggedIn = false
     @State var loginFormShowing = false
     @State var createFormShowing = false
@@ -91,6 +94,13 @@ struct LaunchView: View {
             
             // Show logged in view
             TabViews(loggedIn: $loggedIn)
+                .onAppear(perform: model.getUserData)
+                .onAppear(perform: model.getFabricData)
+                .onDisappear {
+                    model.fabricDataListener?.remove()
+                    model.userDataListener?.remove()
+                }
+                .environmentObject(model)
         }
         
     }

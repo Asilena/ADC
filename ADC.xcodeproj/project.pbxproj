@@ -13,6 +13,7 @@
 		4C05C99D287DAC1700F82A23 /* FabricModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05C99C287DAC1700F82A23 /* FabricModel.swift */; };
 		4C05C9A0287DD4E100F82A23 /* fabricData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C05C99F287DD4E100F82A23 /* fabricData.json */; };
 		4C05C9A3287EC65200F82A23 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C05C9A2287EC65200F82A23 /* DataService.swift */; };
+		4C3E50E6288D42520088324C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E50E5288D42520088324C /* UserModel.swift */; };
 		4C55B24D2885C5C1001A8D31 /* NewProductChoosePatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55B24C2885C5C1001A8D31 /* NewProductChoosePatternView.swift */; };
 		4C55B24F2885C778001A8D31 /* NewProductChooseFabricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55B24E2885C778001A8D31 /* NewProductChooseFabricView.swift */; };
 		4C64BD1B28803F8C008A375F /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C64BD1A28803F8C008A375F /* TabViews.swift */; };
@@ -37,8 +38,9 @@
 		4CB68B03288B1B4500F9C313 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB68B02288B1B4500F9C313 /* ProfileView.swift */; };
 		4CB68B05288B1D3400F9C313 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB68B04288B1D3400F9C313 /* LoginForm.swift */; };
 		4CB68B07288B235E00F9C313 /* CreateAccountForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB68B06288B235E00F9C313 /* CreateAccountForm.swift */; };
+		4CB68B09288C15F500F9C313 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB68B08288C15F500F9C313 /* User.swift */; };
 		4CD372652886C277007BF80E /* NewProductStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD372642886C277007BF80E /* NewProductStepsView.swift */; };
-		4CE200CE28807F6F004236AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE200CD28807F6F004236AB /* HomeView.swift */; };
+		4CE200CE28807F6F004236AB /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE200CD28807F6F004236AB /* OrderView.swift */; };
 		4CFFFBFF2880BE5E0015137B /* PatternDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFFBFE2880BE5E0015137B /* PatternDetailView.swift */; };
 		4CFFFC012880C1310015137B /* patternData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFFFC002880C1310015137B /* patternData.json */; };
 		4CFFFC032880C2E70015137B /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFFFC022880C2E60015137B /* Pattern.swift */; };
@@ -52,6 +54,7 @@
 		4C05C99C287DAC1700F82A23 /* FabricModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricModel.swift; sourceTree = "<group>"; };
 		4C05C99F287DD4E100F82A23 /* fabricData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fabricData.json; sourceTree = "<group>"; };
 		4C05C9A2287EC65200F82A23 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4C3E50E5288D42520088324C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4C55B24C2885C5C1001A8D31 /* NewProductChoosePatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductChoosePatternView.swift; sourceTree = "<group>"; };
 		4C55B24E2885C778001A8D31 /* NewProductChooseFabricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductChooseFabricView.swift; sourceTree = "<group>"; };
 		4C64BD1A28803F8C008A375F /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
@@ -77,8 +80,9 @@
 		4CB68B02288B1B4500F9C313 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4CB68B04288B1D3400F9C313 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		4CB68B06288B235E00F9C313 /* CreateAccountForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountForm.swift; sourceTree = "<group>"; };
+		4CB68B08288C15F500F9C313 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4CD372642886C277007BF80E /* NewProductStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductStepsView.swift; sourceTree = "<group>"; };
-		4CE200CD28807F6F004236AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4CE200CD28807F6F004236AB /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		4CFFFBFE2880BE5E0015137B /* PatternDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternDetailView.swift; sourceTree = "<group>"; };
 		4CFFFC002880C1310015137B /* patternData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = patternData.json; sourceTree = "<group>"; };
 		4CFFFC022880C2E60015137B /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
@@ -118,7 +122,7 @@
 			children = (
 				4CB68AFB288B16C100F9C313 /* Onboarding */,
 				4C64BD1A28803F8C008A375F /* TabViews.swift */,
-				4CE200CD28807F6F004236AB /* HomeView.swift */,
+				4CE200CD28807F6F004236AB /* OrderView.swift */,
 				4CB68AFC288B16D100F9C313 /* Fabric tab */,
 				4CB68AFD288B16D700F9C313 /* Pattern tab */,
 				4CB68B01288B1B3200F9C313 /* Profile */,
@@ -134,6 +138,7 @@
 				4C05C99A287DAB9100F82A23 /* Fabric.swift */,
 				4CFFFC022880C2E60015137B /* Pattern.swift */,
 				4C94123D2884B64100AC4633 /* Store.swift */,
+				4CB68B08288C15F500F9C313 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 		4C05C998287DAA5500F82A23 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4C3E50E5288D42520088324C /* UserModel.swift */,
 				4C05C99C287DAC1700F82A23 /* FabricModel.swift */,
 				4CFFFC062880C5330015137B /* PatternModel.swift */,
 				4C9412412884B90D00AC4633 /* StoreModel.swift */,
@@ -416,6 +422,7 @@
 				4C55B24D2885C5C1001A8D31 /* NewProductChoosePatternView.swift in Sources */,
 				4C05C99D287DAC1700F82A23 /* FabricModel.swift in Sources */,
 				4CB68AF6288B00FD00F9C313 /* DoneButton.swift in Sources */,
+				4CB68B09288C15F500F9C313 /* User.swift in Sources */,
 				4C64BD1B28803F8C008A375F /* TabViews.swift in Sources */,
 				4C55B24F2885C778001A8D31 /* NewProductChooseFabricView.swift in Sources */,
 				4C7478B1287B5F3200466FC6 /* FabricListView.swift in Sources */,
@@ -425,13 +432,14 @@
 				4CD372652886C277007BF80E /* NewProductStepsView.swift in Sources */,
 				4CB68B00288B1AF700F9C313 /* LaunchView.swift in Sources */,
 				4C05C99B287DAB9100F82A23 /* Fabric.swift in Sources */,
-				4CE200CE28807F6F004236AB /* HomeView.swift in Sources */,
+				4CE200CE28807F6F004236AB /* OrderView.swift in Sources */,
 				4CB68AF8288B01E800F9C313 /* NewFabricView.swift in Sources */,
 				4C684AFC2884926900C7954F /* MapView.swift in Sources */,
 				4CB68B03288B1B4500F9C313 /* ProfileView.swift in Sources */,
 				4C9412422884B90D00AC4633 /* StoreModel.swift in Sources */,
 				4CFFFC032880C2E70015137B /* Pattern.swift in Sources */,
 				4C7478AF287B5F3200466FC6 /* ADCApp.swift in Sources */,
+				4C3E50E6288D42520088324C /* UserModel.swift in Sources */,
 				4CB68B05288B1D3400F9C313 /* LoginForm.swift in Sources */,
 				4C05C9A3287EC65200F82A23 /* DataService.swift in Sources */,
 				4CB3795F2881833900889EAB /* PatternStepView.swift in Sources */,

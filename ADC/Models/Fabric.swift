@@ -7,7 +7,15 @@
 
 import Foundation
 
-class Fabric: Identifiable, Decodable, ObservableObject {
+struct Fabric: Identifiable, Hashable, Equatable {
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func == (lhs: Fabric, rhs: Fabric) -> Bool {
+        return lhs.id == rhs.id
+    }
     
     var id:String = ""
     var name:String = ""
@@ -15,7 +23,7 @@ class Fabric: Identifiable, Decodable, ObservableObject {
     var image:String = ""
     var type:String = ""
     var sizes:[FabricSize] = []
-
+    
     
 }
 
@@ -38,6 +46,6 @@ class Store: Identifiable, Decodable, ObservableObject {
     var latitude:Double? = 0.0
     var longitude:Double? = 0.0
     var website:String? = ""
-
+    
 }
 

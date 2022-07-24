@@ -10,6 +10,8 @@ import FirebaseAuth
 
 struct ProfileView: View {
     
+    @EnvironmentObject var model:UserModel
+
     @Binding var loggedIn: Bool
     
     var body: some View {
@@ -17,7 +19,9 @@ struct ProfileView: View {
         VStack{
             Text("Profile")
                 .font(.largeTitle)
+            Text(model.userName)
             Button {
+                model.fabricList = []
                 try! Auth.auth().signOut()
                 loggedIn = false
             } label: {

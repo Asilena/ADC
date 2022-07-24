@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
+import Firebase
 
 struct CreateAccountForm: View {
     
@@ -85,6 +86,13 @@ struct CreateAccountForm: View {
             
             DispatchQueue.main.async {
                 if error == nil {
+                    // Save user data
+                    let user = Auth.auth().currentUser
+                    let db = Firestore.firestore()
+                    let ref = db.collection("users").document(user!.uid)
+                    
+                    ref.setData(["name":name], merge: true)
+                    
                     // Dismiss the form
                     formShowing = false
                 }

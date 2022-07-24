@@ -12,9 +12,8 @@ import SwiftUI
 
 struct FabricListView: View {
     
-    @EnvironmentObject var Smodel:StoreModel
-    @EnvironmentObject var model:FabricModel
-    @EnvironmentObject var Pmodel:PatternModel
+    @EnvironmentObject var model:UserModel
+
     
     @State var isAddViewShowing = false
     
@@ -22,25 +21,23 @@ struct FabricListView: View {
         
         VStack {
             
+            Text("Tissus")
+                .bold()
+                .padding(.top, 40)
+                .font(.largeTitle)
+            Text(String(model.fabricList.count))
+            
             NavigationView {
                 
-                VStack (alignment: .leading) {
                     
-                    Text("Tissus")
-                        .bold()
-                        .padding(.top, 40)
-                        .font(.largeTitle)
                     
-                    ScrollView {
                         
-                        LazyVStack (alignment: .leading) {
-                            
-                            ForEach(model.fabricList) { f in
+                            List{
+                            ForEach(Array(model.fabricList.enumerated()), id:\.offset) { index, f in
                                 
-                                Divider()
                                 
                                 NavigationLink(
-                                    destination: FabricDetailView(fabric: f),
+                                    destination: FabricDetailView(index: index),
                                     label: {
                                         // MARK: row item
                                         HStack(spacing: 20.0) {
@@ -56,7 +53,6 @@ struct FabricListView: View {
                                                     .font(.headline)
                                                     .fontWeight(.bold)
                                                     .foregroundColor(.black)
-                                                //Text(String(f.sizes[0].price))
                                                 
                                                 if f.source.type == "physical" {
                                                     Text(f.source.name + " - " + f.source.city!)
@@ -79,42 +75,39 @@ struct FabricListView: View {
                                     })
                                 
                             }
-                            Divider()
+                            .onDelete(perform: model.deleteFabric)
+                            }
                             
                             
-                        }
                         
                         
-                    }
+                        
                     
-                    // MARK: Instructions
                     
-                    // Instruction card button
-                    Button {
-                        // Show step detail sheet
-                        self.isAddViewShowing = true
-                    } label: {
-                        Image(systemName: "plus.circle")
-                            .padding()
-                            .frame(height:50)
-                        
-                    }
-                    .sheet(isPresented: $isAddViewShowing) {
-                        // Show the step details
-                        NewFabricView()
-                    }
-                }
-                .navigationBarHidden(true)
-                .padding(.leading)
+                    
+                
+               
                 
                 
             }
-            .onAppear(perform : {model.getDatabaseFabrics(completionHandler: { fabrics in
-                model.fabricList = fabrics
-            })})
-            .onDisappear(perform: {model.fabricListener?.remove()})
+            .navigationBarHidden(true)
+            .padding(.leading)
+            // MARK: Add
             
-            
+            // Add card button
+            Button {
+                // Show step detail sheet
+                self.isAddViewShowing = true
+            } label: {
+                Image(systemName: "plus.circle")
+                    .padding()
+                    .frame(height:50)
+                
+            }
+            .sheet(isPresented: $isAddViewShowing) {
+                // Show the step details
+                NewFabricView()
+            }
             
             
             

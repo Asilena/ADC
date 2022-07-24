@@ -11,14 +11,14 @@ import SwiftUI
 
 struct TabViews: View {
     
-    @EnvironmentObject var model:FabricModel
+    @EnvironmentObject var model:UserModel
     @Binding var loggedIn: Bool
 
     var body: some View {
         
         TabView{
 
-            HomeView()
+            OrderView()
                 .tabItem{
                     VStack {
                         Image(systemName: "house.fill")
@@ -34,21 +34,21 @@ struct TabViews: View {
                     }
                 }
 
-            PatternListView()
-                .tabItem{
-                    VStack {
-                        Image(systemName: "tshirt.fill")
-                        Text("Patrons")
-                    }
-                }
+//            PatternListView()
+//                .tabItem{
+//                    VStack {
+//                        Image(systemName: "tshirt.fill")
+//                        Text("Patrons")
+//                    }
+//                }
             
-            NewProductChoosePatternView()
-                .tabItem{
-                    VStack {
-                        Image(systemName: "arrowtriangle.right.circle")
-                        Text("Nouveau produit")
-                    }
-                }
+//            NewProductChoosePatternView()
+//                .tabItem{
+//                    VStack {
+//                        Image(systemName: "arrowtriangle.right.circle")
+//                        Text("Nouveau produit")
+//                    }
+//                }
             
             ProfileView(loggedIn: $loggedIn)
                 .tabItem{
@@ -59,9 +59,7 @@ struct TabViews: View {
                 }
             
         }
-        .environmentObject(StoreModel())
-        .environmentObject(FabricModel())
-        .environmentObject(PatternModel())
+        
 
         
         

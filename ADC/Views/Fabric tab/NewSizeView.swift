@@ -50,7 +50,7 @@ struct NewSizeView: View {
                 sizes[0].quantity = quantity ?? 0
 
                 // Add data
-                model.addSize(fabric: fabric, length: length!, width: width!, quantity: quantity!, price: price!)
+//                model.addSize(fabric: fabric, length: length!, width: width!, quantity: quantity!, price: price!)
 //                //Clear test fields
 //                name = ""
 //                type = ""

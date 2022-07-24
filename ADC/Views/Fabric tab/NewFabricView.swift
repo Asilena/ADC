@@ -54,7 +54,7 @@ struct NewFabricView: View {
                 sizes[0].quantity = quantity ?? 0
 
                 // Add data
-                model.addFabric(name: name, type: type, sizes: sizes)
+                FabricModel.addFabric(name: name, type: type, sizes: sizes)
                 //Clear test fields
                 name = ""
                 type = ""
@@ -67,11 +67,5 @@ struct NewFabricView: View {
             
         }
         
-    }
-}
-
-struct NewFabric_Previews: PreviewProvider {
-    static var previews: some View {
-        NewFabricView()
     }
 }
